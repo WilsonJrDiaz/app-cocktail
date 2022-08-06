@@ -1,0 +1,14 @@
+.navtab {
+  &__logo {
+    width: 60px;
+  }
+  .form-search {
+    &__icon {
+      width: 20px;
+    }
+    .button-search {
+      background-color: $primary-color;
+      box-shadow: rgb(0 0 0 / 24%) 3px 2px 6px;
+    }
+  }
+}

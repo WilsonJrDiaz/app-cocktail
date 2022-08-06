@@ -1,0 +1,61 @@
+.cocktail {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  &__head {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    &__content {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      &__instructions {
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+    &__image {
+      img {
+        border-top-right-radius: 20px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__ingredients {
+    padding: 1rem;
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      &__child {
+        display: flex;
+        gap: 1rem;
+        &__ingredient {
+          font-weight: 800;
+          display: flex;
+          align-items: end;
+        }
+        &__measure {
+          display: flex;
+          align-items: end;
+          gap: 5px;
+          &-first {
+            font-size: 20px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}

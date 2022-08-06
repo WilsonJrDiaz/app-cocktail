@@ -1,0 +1,11 @@
+html, body {
+  background: #f0eada !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cocktail-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 10px;
+  margin: 2rem 0;
+}
